@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Security - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 2s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hover-scale:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+        .pricing-plan {
+            transition: transform 0.2s ease-in-out;
+        }
+        .pricing-plan:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 100px 0;
+            border-bottom: 3px solid #0d6efd;
+        }
+        .navbar-brand { font-weight: bold; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="#">CYBER<span class="text-white">SHIELD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero text-center">
+        <div class="container fade-in-up">
+            <h1 class="display-4 fw-bold">Lindungi Aset Digital Anda</h1>
+            <p class="lead">Solusi keamanan IT terdepan untuk mencegah peretasan dan pencurian data.</p>
+            
+            <button type="button" class="btn btn-primary btn-lg px-5" data-bs-toggle="modal" data-bs-target="#modalKonsultasi">
+                Konsultasi Gratis Sekarang
+            </button>
+        </div>
+    </section>
+
+    <section id="services" class="container mt-5 pt-4">
+        <h2 class="text-center mb-5 fw-bold">Layanan Kami</h2>
+        <div class="row g-4">
+            <div class="col-md-4 fade-in-up">
+                <div class="card hover-scale shadow-sm h-100 border-0">
+                    <div class="card-body d-flex flex-column text-center p-4">
+                        <h5 class="card-title fw-bold mb-3">Penetration Testing</h5>
+                        <img src="image/penetrationtesting.png" alt="Penetration Testing" class="mb-3 mx-auto" style="width: 150px; height: auto; border-radius: 8px;">
+                        <p class="card-text text-muted">Simulasi serangan peretas untuk menemukan celah keamanan sistem Anda.</p>
+                        <a href="#pricing" class="btn btn-outline-primary mt-auto">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up">
+                <div class="card hover-scale shadow-sm h-100 border-0">
+                    <div class="card-body d-flex flex-column text-center p-4">
+                        <h5 class="card-title fw-bold mb-3">Web App Firewall</h5>
+                        <img src="image/firewall.png" alt="Firewall" class="mb-3 mx-auto" style="width: 150px; height: auto; border-radius: 8px;">
+                        <p class="card-text text-muted">Dinding api berlapis untuk memblokir serangan DDoS dan malware.</p>
+                        <a href="#pricing" class="btn btn-outline-primary mt-auto">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up">
+                <div class="card hover-scale shadow-sm h-100 border-0">
+                    <div class="card-body d-flex flex-column text-center p-4">
+                        <h5 class="card-title fw-bold mb-3">24/7 Monitoring</h5>
+                        <img src="image/monitoring.png" alt="Monitoring" class="mb-3 mx-auto" style="width: 150px; height: auto; border-radius: 8px;">
+                        <p class="card-text text-muted">Pemantauan jaringan real-time oleh tim ahli keamanan siber kami.</p>
+                        <a href="#pricing" class="btn btn-outline-primary mt-auto">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="container mt-5 pt-5 text-center">
+      <h2 class="fw-bold mb-5">Apa Kata Klien Kami</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-sm border-0 bg-light">
+                  <div class="card-body p-5">
+                    <p class="fst-italic mb-4 fs-5">
+                      "Sejak menggunakan jasa CyberShield, sistem perbankan kami
+                      jauh lebih aman. Pen testing mereka sangat mendalam dan
+                      membantu kami menemukan bug kritis."
+                    </p>
+                    <h6 class="fw-bold mb-0">Andi Pratama</h6>
+                    <small class="text-muted">CTO - Tech Finansial Indonesia</small >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-sm border-0 bg-light">
+                  <div class="card-body p-5">
+                    <p class="fst-italic mb-4 fs-5">
+                      "Serangan DDoS sempat melumpuhkan toko online kami. Tim
+                      CyberShield merespons dalam hitungan menit. Layanan 24/7
+                      mereka bukan sekadar janji!"
+                    </p>
+                    <h6 class="fw-bold mb-0">Siti Aminah</h6>
+                    <small class="text-muted">Owner - Butik Fashion Online</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-sm border-0 bg-light">
+                  <div class="card-body p-5">
+                    <p class="fst-italic mb-4 fs-5">
+                      "Sangat profesional dan transparan. Laporan audit keamanan
+                      bulanan yang diberikan sangat mudah dipahami oleh
+                      manajemen kami yang non-teknis."
+                    </p>
+                    <h6 class="fw-bold mb-0">Kevin Wijaya</h6>
+                    <small class="text-muted">Direktur Operasional - Logistik Pro</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="pricing" class="container mt-5 pt-5">
+        <h2 class="text-center mb-5 fw-bold">Pricing Plan</h2>
+        <div class="row g-4">
+            <div class="col-md-4 fade-in-up">
+                <div class="card pricing-plan hover-scale text-center border-0 shadow">
+                    <div class="card-header bg-primary text-white py-3 fw-bold">Paket Basic</div>
+                    <div class="card-body p-4">
+                        <h3 class="card-title my-3">$99<small class="text-muted fs-6">/bulan</small></h3>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Scan Mingguan</li>
+                            <li class="mb-2">Basic Firewall</li>
+                            <li class="mb-2">Laporan Bulanan</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalKonsultasi">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up">
+                <div class="card pricing-plan hover-scale text-center border-0 shadow">
+                    <div class="card-header bg-success text-white py-3 fw-bold">Paket Premium</div>
+                    <div class="card-body p-4">
+                        <h3 class="card-title my-3">$299<small class="text-muted fs-6">/bulan</small></h3>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Pen Testing Bulanan</li>
+                            <li class="mb-2">Anti-DDoS Lanjutan</li>
+                            <li class="mb-2">Support 24/7</li>
+                        </ul>
+                        <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalKonsultasi">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up">
+                <div class="card pricing-plan hover-scale text-center border-0 shadow">
+                    <div class="card-header bg-warning text-dark py-3 fw-bold">Paket Pro</div>
+                    <div class="card-body p-4">
+                        <h3 class="card-title my-3">$599<small class="text-muted fs-6">/bulan</small></h3>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Pemantauan SOC 24/7</li>
+                            <li class="mb-2">Audit ISO 27001</li>
+                            <li class="mb-2">Dedicated Engineer</li>
+                        </ul>
+                        <button type="button" class="btn btn-warning text-white w-100" data-bs-toggle="modal" data-bs-target="#modalKonsultasi">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalKonsultasi" tabindex="-1" aria-labelledby="modalKonsultasiLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title fw-bold" id="modalKonsultasiLabel">
+              Formulir Konsultasi Keamanan
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="namaLengkap" class="form-label">Nama Lengkap / Perusahaan</label>
+                <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama Anda"/>
+              </div>
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label">Alamat Email</label>
+                <input type="email" class="form-control" id="emailAddress" placeholder="nama@perusahaan.com"/>
+              </div>
+              <div class="mb-3">
+                <label for="kendala" class="form-label">Ceritakan Kendala IT Anda</label>
+                <textarea class="form-control" id="kendala" rows="4" placeholder="Misal: Website saya sering terkena serangan DDoS..."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="button" class="btn btn-primary">Kirim Pesan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center p-4 mt-5">
+        <div class="container">
+            <p>© 2026 CyberShield. All rights reserved. | <a href="#" class="text-light text-decoration-none">Privacy Policy</a></p>
+            <div>
+                <a href="#" class="text-light mx-2 text-decoration-none">Facebook</a>
+                <a href="#" class="text-light mx-2 text-decoration-none">Twitter</a>
+                <a href="#" class="text-light mx-2 text-decoration-none">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
